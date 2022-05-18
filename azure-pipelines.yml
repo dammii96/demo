@@ -12,6 +12,7 @@
     veracodeAppProfile: 'Demo POC Veracode'
     version: '$(build.buildNumber)'
     filepath: './demo-avalora-veracode.zip'
+    sandboxName: 'Damian Ortiz'
     importResults: true
     maximumWaitTime: '360'
     
