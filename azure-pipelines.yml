@@ -25,4 +25,5 @@ steps:
     veracodeAppProfile: 'Demo POC veracode'
     version: '$(build.buildNumber)'
     filepath: './demo-avalora-veracode.zip'
+    sandboxName: 'Damian Ortiz'
     maximumWaitTime: '360'
