@@ -27,4 +27,5 @@ steps:
     veracodeAppProfile: 'Demo POC Veracode'
     version: '$(build.buildNumber)'
     filepath: '$(build.artifactstagingdirectory)'
+    sandboxName: 'Damian Ortiz'
     maximumWaitTime: '360'
