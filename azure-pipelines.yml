@@ -20,8 +20,8 @@ steps:
 - task: Veracode@3
   inputs:
     ConnectionDetailsSelection: 'Credentials'
-    apiId: 'edcbdfac3319b87104e720c4b48f4556'
-    apiKey: '7dba8f47cec959a969b1b721aec8cc5e59fc3aa48cf54f0c4b72444fd06830139e0280dc81373e2e27b7378251fc683d055d781619f5e01b0b90c0669f3beeb0'
+    apiId: '27bc1b69ae79387dce8cc314d1bb5126'
+    apiKey: 'a8f1039f1b765f75631053bba405891afd3b9c8874e2cb2c658695078a8c2fc8858267b616af11e7ae56e1235e68e0134b46edd101633cfcb87d45eacead16c9'
     veracodeAppProfile: 'Demo POC veracode'
     sandboxName: 'dammii96'
     version: '$(build.buildNumber)'
