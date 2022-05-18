@@ -19,21 +19,12 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: './'
-    includeRootFolder: true
-    archiveType: 'zip'
-    archiveFile: 'demo-avalora-veracode'
-    replaceExistingArchive: true
-
 - task: Veracode@3
   inputs:
     ConnectionDetailsSelection: 'Credentials'
-    apiId: '632492030ee31b5035f39b120d753207'
-    apiKey: 'e1693bd487bd53bce16d9a87a3e84e60b7e6b684908d9c0d5cafb56744ad7bbba485333029bbdf2195b7c523b4b0bae87986be0b6951875d0fb45061d23804c4'
-    veracodeAppProfile: 'Demo POC veracode'
-    sandboxName: 'Damian Ortiz'
+    apiId: 'edcbdfac3319b87104e720c4b48f4556'
+    apiKey: '7dba8f47cec959a969b1b721aec8cc5e59fc3aa48cf54f0c4b72444fd06830139e0280dc81373e2e27b7378251fc683d055d781619f5e01b0b90c0669f3beeb0'
+    veracodeAppProfile: 'Demo POC Veracode'
     version: '$(build.buildNumber)'
-    filepath: 'demo-avalora-veracode.zip'
+    filepath: '$(build.artifactstagingdirectory)'
     maximumWaitTime: '360'
