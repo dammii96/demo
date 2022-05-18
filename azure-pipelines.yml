@@ -19,6 +19,14 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: './'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: 'demo-avalora-veracode'
+    replaceExistingArchive: true
+
 - task: Veracode@3
   inputs:
     ConnectionDetailsSelection: 'Credentials'
@@ -27,5 +35,5 @@ steps:
     veracodeAppProfile: 'Demo POC veracode'
     sandboxName: 'Damian Ortiz'
     version: '$(build.buildNumber)'
-    filepath: '$(build.artifactstagingdirectory)'
+    filepath: 'demo-avalora-veracode.zip'
     maximumWaitTime: '360'
