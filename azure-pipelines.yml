@@ -24,16 +24,16 @@ steps:
     rootFolderOrFile: './'
     includeRootFolder: true
     archiveType: 'zip'
-    archiveFile: 'demo-avalora-veracode'
+    archiveFile: 'demo-veracode'
     replaceExistingArchive: true
 
 - task: Veracode@3
   inputs:
     ConnectionDetailsSelection: 'Credentials'
-    apiId: 'edcbdfac3319b87104e720c4b48f4556'
-    apiKey: '7dba8f47cec959a969b1b721aec8cc5e59fc3aa48cf54f0c4b72444fd06830139e0280dc81373e2e27b7378251fc683d055d781619f5e01b0b90c0669f3beeb0'
+    apiId: '69d32b48a0313c9a3ef7f270c7f7e8f7'
+    apiKey: 'fcf9a5a7f7cff747c072fbde3da2f54ec8e0a0efca0515cfb47373bd2fe758342d0a5da97c27f3f0c5e966d3630c4f3eb8681aa4221a597de81c6ec34cbbb7eb'
     veracodeAppProfile: 'Demo POC Veracode'
     version: '$(build.buildNumber)'
-    filepath: 'demo-avalora-veracode.zip'
+    filepath: 'demo-veracode.zip'
     sandboxName: 'Damian Ortiz'
     maximumWaitTime: '360'
