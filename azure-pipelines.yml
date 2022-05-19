@@ -32,7 +32,7 @@ steps:
     ConnectionDetailsSelection: 'Credentials'
     apiId: '69d32b48a0313c9a3ef7f270c7f7e8f7'
     apiKey: 'fcf9a5a7f7cff747c072fbde3da2f54ec8e0a0efca0515cfb47373bd2fe758342d0a5da97c27f3f0c5e966d3630c4f3eb8681aa4221a597de81c6ec34cbbb7eb'
-    veracodeAppProfile: 'Demo POC Veracode'
+    veracodeAppProfile: 'Demo POC veracode'
     version: '$(build.buildNumber)'
     filepath: 'demo-veracode.zip'
     sandboxName: 'Damian Ortiz'
