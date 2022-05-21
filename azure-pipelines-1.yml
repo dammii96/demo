@@ -20,7 +20,7 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: ':/'
+    rootFolderOrFile: './'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: 'Demo-veracode1'
@@ -30,7 +30,7 @@ steps:
   inputs:
     ConnectionDetailsSelection: 'Endpoint'
     AnalysisService: 'VeraC'
-    veracodeAppProfile: 'Demo POC Veracode'
+    veracodeAppProfile: 'Demo POC veracode'
     version: '$(build.buildNumber)'
     filepath: 'Demo-veracode1.zip'
     sandboxName: 'Damian Ortiz'
